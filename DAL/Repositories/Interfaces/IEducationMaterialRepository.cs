@@ -6,6 +6,8 @@ using System.Text;
 namespace DAL.Repositories.Interfaces
 {
     public interface IEducationMaterialRepository
+        : IRepository<EducationMaterial>
     {
+
     }
 }

@@ -5,7 +5,10 @@ using DAL.Repositories.Interfaces;
 
 namespace DAL.UnitOfWork
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable
     {
+        IEduInfoSystemRepository EduInfoSystems { get; }
+        IEducationMaterialRepository EduMaterials { get; }
+        void Save();
     }
 }

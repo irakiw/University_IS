@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
   </ItemGroup>
 
+	<ItemGroup>
+		<Reference Include="DAL">
+			<HintPath>..\DAL\bin\Debug\net6.0\DAL.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
 </Project>
