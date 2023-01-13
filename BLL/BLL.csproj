@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -6,4 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+  </ItemGroup>
+	
+	<ItemGroup>
+		<Reference Include="CLL">
+			<HintPath>..\CLL\bin\Debug\net6.0\CLL.dll</HintPath>
+		</Reference>
+		<Reference Include="DAL">
+			<HintPath>..\DAL\bin\Debug\net6.0\DAL.dll</HintPath>
+		</Reference>
+	</ItemGroup>
 </Project>
